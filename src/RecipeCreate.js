@@ -51,7 +51,7 @@ function RecipeCreate({setRecipes, recipes}) {
           <tr>
             <td><input id="name" name="name" type="text" placeholder="Name" onChange={changeHandler} value={recipeForm.name} /></td>
             <td><input id="cuisine" name="cuisine" type="text" placeholder="Cuisine" onChange={changeHandler} value={recipeForm.cuisine} /></td>
-            <td><input id="url" name="url" type="text" placeholder="URL" onChange={changeHandler} value={recipeForm.photo}/></td>
+            <td><input id="url" name="photo" type="text" placeholder="URL" onChange={changeHandler} value={recipeForm.photo}/></td>
             <td><textarea id="ingredients" name="ingredients" type="text" placeholder="Ingredients" onChange={changeHandler} value={recipeForm.ingredients} /></td>
             <td><textarea id="preparation" name="preparation" type="text" placeholder="Preparation" onChange={changeHandler} value={recipeForm.preparation} /></td>
             <td>
