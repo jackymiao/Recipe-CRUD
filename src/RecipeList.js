@@ -14,12 +14,12 @@ function RecipeList({recipes, setRecipes}) {
       <table>
         <thead>
           <tr className="headerrow">
-            <th className="tableheader1">Name</th>
-            <th className="tableheader1">Cuisine</th>
-            <th className="tableheader1">Photo</th>
-            <th className="tableheader2">Ingredients</th>
-            <th className="tableheader2">Preparation</th>
-            <th className="tableheader1">Actions</th>
+            <th >Name</th>
+            <th >Cuisine</th>
+            <th >Photo</th>
+            <th className="longCell">Ingredients</th>
+            <th className="longCell">Preparation</th>
+            <th >Actions</th>
             </tr>
         </thead>
         <tbody>

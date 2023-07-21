@@ -7,8 +7,8 @@ function Recipe({recipe, setRecipes, recipes}){
             <td >{recipe.name}</td>
             <td >{recipe.cuisine}</td>
             <td ><img name="photo" alt={recipe.name} src={recipe.photo}/></td>
-            <td className="content_td"><p>{recipe.ingredients}</p></td>
-            <td className="content_td"><p>{recipe.preparation}</p></td>
+            <td className="content_td longCell"><p>{recipe.ingredients}</p></td>
+            <td className="content_td longCell"><p>{recipe.preparation}</p></td>
             <td ><button name="delete" onClick={deleteHandler}>Delete</button></td>
           </tr>
 }

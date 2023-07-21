@@ -6,9 +6,11 @@ img{
     height:100%;
 }
 
-.tableheader1{
-    width: 10%;
+
+th.longCell:nth-child(n){
+    width:30%;
 }
-.tableheader2{
+
+td.longCell:nth-child(n){
     width:30%;
 }
