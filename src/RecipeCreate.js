@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './RecipeCreate.css'
 
 function RecipeCreate({setRecipes, recipes}) {
 
@@ -36,13 +37,23 @@ function RecipeCreate({setRecipes, recipes}) {
   return (
     <form name="create" onSubmit={submitHandler}>
       <table>
+      <thead>
+          <tr>
+            <th className="tableheader1"></th>
+            <th className="tableheader1"></th>
+            <th className="tableheader1"></th>
+            <th className="tableheader2"></th>
+            <th className="tableheader2"></th>
+            <th className="tableheader1"></th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td><input id="name" name="name" type="text" placeholder="Name" onChange={changeHandler} value={recipeForm.name} /></td>
             <td><input id="cuisine" name="cuisine" type="text" placeholder="Cuisine" onChange={changeHandler} value={recipeForm.cuisine} /></td>
             <td><input id="url" name="url" type="text" placeholder="URL" onChange={changeHandler} value={recipeForm.photo}/></td>
-            <td><input id="ingredients" name="ingredients" type="text" placeholder="Ingredients" onChange={changeHandler} value={recipeForm.ingredients} /></td>
-            <td><input id="preparation" name="preparation" type="text" placeholder="Preparation" onChange={changeHandler} value={recipeForm.preparation} /></td>
+            <td><textarea id="ingredients" name="ingredients" type="text" placeholder="Ingredients" onChange={changeHandler} value={recipeForm.ingredients} /></td>
+            <td><textarea id="preparation" name="preparation" type="text" placeholder="Preparation" onChange={changeHandler} value={recipeForm.preparation} /></td>
             <td>
               <button type="submit">Create</button>
             </td>

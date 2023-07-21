@@ -1,5 +1,7 @@
 import React from "react";
 import Recipe from './Recipe.js'
+import './RecipeList.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function RecipeList({recipes, setRecipes}) {
   
@@ -11,17 +13,17 @@ function RecipeList({recipes, setRecipes}) {
     <div className="recipe-list">
       <table>
         <thead>
-          <tr key="tableheader">
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
-          </tr>
+          <tr className="headerrow">
+            <th className="tableheader1">Name</th>
+            <th className="tableheader1">Cuisine</th>
+            <th className="tableheader1">Photo</th>
+            <th className="tableheader2">Ingredients</th>
+            <th className="tableheader2">Preparation</th>
+            <th className="tableheader1">Actions</th>
+            </tr>
         </thead>
         <tbody>
-          {recipes.map(recipe=><Recipe recipe={recipe} setRecipes={setRecipes} recipes={recipes} />)}
+          {recipes.map(recipe=><Recipe recipe={recipe} setRecipes={setRecipes} recipes={recipes} key={recipe.name} />)}
           
         </tbody>
       </table>

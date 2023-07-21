@@ -58,3 +58,18 @@ table {
 
 
 /* Column size for tbody */
+
+
+h1{
+  font-family:'Playfair Display SC';
+  text-align: center;
+  font-size: 64px;
+}
+
+
+tr:nth-child(odd){
+  background-color: #fff0c7;
+}
+tr.headerrow {
+  background-color:white;
+}

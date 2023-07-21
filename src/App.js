@@ -3,6 +3,9 @@ import "./App.css";
 import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData"
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
