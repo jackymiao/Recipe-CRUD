@@ -1,6 +1,7 @@
 import React from "react";
+import Recipe from './Recipe.js'
 
-function RecipeList() {
+function RecipeList({recipes}) {
   
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
@@ -10,7 +11,7 @@ function RecipeList() {
     <div className="recipe-list">
       <table>
         <thead>
-          <tr>
+          <tr key="tableheader">
             <th>Name</th>
             <th>Cuisine</th>
             <th>Photo</th>
@@ -20,7 +21,8 @@ function RecipeList() {
           </tr>
         </thead>
         <tbody>
-        
+          {recipes.map(recipe=><Recipe recipe={recipe} />)}
+          
         </tbody>
       </table>
     </div>
