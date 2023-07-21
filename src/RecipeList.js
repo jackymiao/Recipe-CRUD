@@ -1,7 +1,7 @@
 import React from "react";
 import Recipe from './Recipe.js'
 import './RecipeList.css';
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 function RecipeList({recipes, setRecipes}) {
   
