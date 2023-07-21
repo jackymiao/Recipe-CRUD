@@ -1,7 +1,9 @@
 import React from 'react';
 
 
-function Recipe({recipe}){
+function Recipe({recipe, setRecipes, recipes}){
+    const deleteHandler = ()=>setRecipes(()=>recipes.filter(recipeObj=>recipeObj.name !== recipe.name))
+
     console.log(recipe);
     return <tr key={recipe.name}>
             <td>{recipe.name}</td>
@@ -9,7 +11,7 @@ function Recipe({recipe}){
             <td>{recipe.photo}</td>
             <td>{recipe.ingredients}</td>
             <td>{recipe.preparation}</td>
-            <td><button>Delete</button></td>
+            <td><button onClick={deleteHandler}>Delete</button></td>
           </tr>
 }
 
